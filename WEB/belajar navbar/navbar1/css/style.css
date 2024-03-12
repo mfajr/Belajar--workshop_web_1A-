@@ -1,0 +1,135 @@
+*{
+    padding:0;
+    margin:0;
+    border:none;
+    text-decoration:none;
+    outline:none;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#b88f48;
+    --bg:#161616;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+nav{
+    display:flex;
+    font-family:'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding:22px 7%;
+    border-bottom:1px solid var(--primary);
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 999;
+}
+
+.navbar-logo{ 
+    color:#fff;
+    font-size:32px;
+    font-weight:700;
+    font-style:italic;
+}
+
+.navbar-logo span{
+    color:var(--primary);
+}
+
+.navbar-nav a{
+    color:#fff;
+    display:inline-block;
+    margin:0 18px;
+    font-size:19px;
+}
+
+.navbar-nav a:hover{
+    color:var(--primary);
+}
+
+.navbar-nav a::after{
+    content:'';
+    display:block;
+    padding-bottom: 0.5px;
+    border-bottom:0.1rem solid var(--primary);
+    transform:scaleX(0);
+    transition:0.2s linear;
+}
+
+.navbar-nav a:hover::after{
+    transform:scaleX(0.5);
+}
+
+.navbar-extra a{
+    color:#fff;
+    display:inline-block;
+    margin:0 7px;
+    font-size:19px;
+}
+
+.navbar-extra a:hover{
+    color:var(--primary);
+}
+
+#menu{
+    display:none;
+}
+
+/*    responsive    */
+/* laptop */
+@media(max-width:1366px){
+    html{
+        font-size:75%;
+    }
+}
+/* handphone */
+@media(max-width:768px){
+    html{
+        font-size:62%;
+    }
+
+    #menu{
+        display:inline-block;
+    }
+
+    .navbar-nav{
+        position:absolute;
+        top:100%;
+        right:-100%;
+        background-color:#fff;
+        width:30rem;
+        height:100vh;
+        transition:0.3s;
+    }
+
+    .navbar-nav.active{
+        right:0;
+    }
+
+    .navbar-nav a{
+        display:block;
+        color:var(--bg);
+        margin:20px;
+        padding:5px;
+        font-size:32px;
+    }
+
+    .navbar-nav a::after{
+        transform-origin:0 0;
+    }
+
+    .navbar-nav a:hover::after{
+        transform:scaleX(0.3);
+    }
+}
+/* mobile phone */
+@media(max-width:450px){
+    html{
+        font-size:55%;
+    }
+}

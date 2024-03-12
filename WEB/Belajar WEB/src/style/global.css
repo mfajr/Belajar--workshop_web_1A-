@@ -1,0 +1,58 @@
+/*? global clearing */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary:rgb(45, 45, 255);
+    --bg-secondary:#eaeaea;
+    --txt-primary:#f7f7f7;
+    --txt-secondary:#222222;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-color: var(--bg-primary)
+}
+
+.wrapper{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:auto;
+}
+
+.card{
+    border:3.5px solid #222222;
+    border-radius:10px;
+    background-color:var(--bg-secondary);
+    color:var(--txt-secondary);
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+    font-size:15px;
+    text-align:center;
+    padding:20px;
+    margin:23px;
+    box-shadow:5px 5px 5px 5px rgba(165, 180, 249, 0.5);
+}
+
+p{
+    font-family:sans-serif;
+    font-size:15px;
+}
+
+.icon{
+    font-size:30px;
+    color:tomato;
+    margin:10px;
+}
