@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tugas 2</title>
+</head>
+<body>
+    <form action="#">
+        <p>PENDAFTARAN</p>
+        <label style="display: flex;"><pre>Nama          :</pre><input type="text"></label>
+        <label style="display: flex;"><pre>Kelas         :</pre><input type="text"></label>
+        <label for="prodi"><pre>Program studi :</pre></label>
+        <select name="prodi" id="prodi">
+            <option value="ti">Teknik Informatika</option>
+            <option value="trkj">Teknik Rekayasa Komputer Jaringan</option>
+            <option value="trmm">Teknik Rekayasa MultiMedia</option>
+        </select>
+        <label><pre>Alamat        :</pre>
+            <label for="prov">Provinsi</label>
+                <select name="prov" id="prov">
+                    <option value="aceh">Aceh</option>
+                    <option value="jakarta">jakarta</option>
+                </select>
+            <label for="kota">Kota</label> 
+                <select name="kota" id="kota">
+                    <option value="lamlo">Lamlo</option>
+                    <option value="panton">Panton Labu</option>
+                </select>
+            <pre>Alamat    :</pre><textarea name="message" cols="30" rows="10"></textarea>
+        </label>
+    </form>
+</body>
+</html>
