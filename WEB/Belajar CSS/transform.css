@@ -1,0 +1,19 @@
+.kotak {
+    width: 300px;
+    height: 100px;
+    margin: 12rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transition: 1s ease-in-out;
+}
+
+/* .transformasi {
+    transform: scale(0.5); Memindahkan elemen 50 piksel ke kanan dan 50 piksel ke bawah */
+
+
+.kotak:hover {
+    box-shadow: 0 0 40px rgb(0, 255, 34);
+    transform: scale(1.1);
+}
