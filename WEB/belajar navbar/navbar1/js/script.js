@@ -1,14 +1,16 @@
-// toggle kelas active
-const navbarNav=document.querySelector('.navbar-nav');
-// ketika di klik tombol menu
-document.querySelector('#menu').onclick = () => {
-    navbarNav.classList.toggle('active');
+// variable toggle
+const navbarNav = document.querySelector('.navbar-nav');
+
+// ketika hamburger menu di klik
+document.querySelector('#hamburger-menu').onclick = () => {
+    navbarNav.classList.toggle('active')
 };
 
-// klik disembarang tempat bisa menghilangkan menu \\
-const hamburger=document.querySelector('#menu');
+// ketika user klik selain navbar dan menu
+const hamburger = document.querySelector('#hamburger-menu')
 document.addEventListener('click', function(e) {
-    if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)){
-        navbarNav.classList.remove('active');
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) 
+    {
+        navbarNav.classList.remove('active')
     }
 });

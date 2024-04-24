@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested ternary</title>
+</head>
+<body>
+    <script>
+        // ternary dalam ternary
+        var input = prompt("Apakah Anda Islam?(Jawab memakai huruf besar)");
+        var jawab = (input.toUpperCase() == "IYA") ? "Selamat! anda selamat!"
+        : ((input.toUpperCase() == "BUKAN") ? "Maka, Bisa Jadi Anda Kristen" 
+        : "Maaf, Saya Tidak Tau Agama Anda💁‍♂️");
+        document.write(`<b>${jawab}</b>`);
+    </script>
+</body>
+</html>
