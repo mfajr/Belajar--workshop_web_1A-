@@ -1,3 +1,8 @@
+/* ==========================================
+Nama   : Muhammad Fajar
+Kelas  : TI-1A / semester 2
+Kampus : Politeknik Negeri Lhokseumawe
+============================================= */
 :root {
     --primary: #b6895b;
     --bg: #010101;
@@ -6,27 +11,27 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
     outline: none;
     border: none;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    background-color: var(--bg);
     color: #fff;
-    font-family: "Poppins", sans-serif;
-    min-height: 2000px;
+    background-color: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    height: 2000px;
 }
 
 .navbar {
     display: flex;
+    height: 3.7rem;
+    padding: 1.4rem 7%;
     justify-content: space-between;
+    background-color: rgba(1, 1, 3, 0.5);
+    border-bottom: 1px solid #896644;
     align-items: center;
-    padding: 2rem 7%;
-    height: 5.5rem;
-    border-bottom: 0.1rem solid #5b442d;
-    background-color: rgba(1, 1, 1, 0.8);
     position: fixed;
     top: 0;
     right: 0;
@@ -36,40 +41,35 @@ body {
 
 .navbar .navbar-logo {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
-
 .navbar .navbar-logo span {
     color: var(--primary);
 }
 
+.navbar .navbar-nav {
+    display: inline-flex;
+    font-size: 1rem;
+}
 .navbar .navbar-nav a {
-    display: inline-block;
-    font-size: 1.2rem;
     color: #fff;
-    margin: 0 1rem;
+    margin-right: 1.5rem;
 }
-
-.navbar .navbar-nav a:hover {
-    color: var(--primary);
-}
-
 .navbar .navbar-nav a::after {
     content: '';
     display: block;
-    border-bottom: 0.1rem solid var(--primary);
+    border-bottom: 2px solid var(--primary);
     transform: scaleX(0);
-    transition: .2s linear;
+    transition: .2s;
 }
 .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.5);
+    transform: scaleX(0.7);
 }
 
-.navbar .navbar-extra a{
+.navbar .navbar-extra a {
     color: #fff;
-    margin: 0 0.5rem;
+    margin-right: 1rem; 
 }
-
 .navbar .navbar-extra a:hover {
     color: var(--primary);
 }
@@ -78,213 +78,62 @@ body {
     display: none;
 }
 
-/* hero section */
+/* ===== Hero Section ===== */
 .hero {
     display: flex;
-    align-items: center;
     height: 100vh;
-    background: url('../img/flip\ gambar\ kopi\ hero.jpg');
-    background-position: center;
+    background: url('../img/flip\ gambar\ kopi\ hero.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
+    align-items: center;
     position: relative;
 }
-
 .hero::after {
     content: '';
-    display: block;
     position: absolute;
-    width: 100%;
+    display: block;
     height: 30%;
+    width: 100%;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(225, 225, 225, 0) 55%);
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(1, 1, 1, 0) 55%);
 }
-
 .hero .content {
-    padding: 1.6rem 7%;
-    max-width: 60rem;
+    max-width: 45rem;
+    padding: 1rem 6%;
 }
-
 .hero .content h1 {
-    font-size: 5em;
-    color: #fff;
-    line-height: 1.2;
-    text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+    font-size: 4.7em;
+    line-height: 1.1;
 }
-
 .hero .content h1 span {
     color: var(--primary);
 }
 
 .hero .content p {
+    font-size: 1.2rem;
     font-weight: 100;
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     mix-blend-mode: difference;
 }
 
 .hero .content .cta {
     display: inline-block;
-    margin-top: 1rem;
-    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
     background-color: var(--primary);
-    padding: 1rem 3rem;
-    font-size: 1.4rem;
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    color: #fff;
+    margin-top: 1rem;
 }
-
 .hero .content .cta:hover {
-    background-color: #a5784b;
+    background-color: #a1784f;
 }
 
 .about {
-    padding: 8rem 7% 1.4rem;
-}
-
-.about h2 {
+    padding: 5rem 7% 1rem;
     text-align: center;
-    font-size: 2.6rem;
-    margin-bottom: 3rem;
 }
-
-.about h2 span {
+.about span{
     color: var(--primary);
-}
-
-.about .row {
-    display: flex;
-}
-
-.about .row .about-img {
-    flex: 1 1 45rem;
-}
-
-.about .row .about-img img {
-    width: 100%;
-}
-
-.about .row .content {
-    flex: 1 1 35rem;
-    padding: 0 2rem;
-}
-
-.about .row .content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.about .row .content p {
-    font-weight: 100;
-    font-size: 1.4rem;
-    margin-top: 1rem;
-}
-
-/* media queries */
-/* laptop */
-@media (max-width: 1366px) {
-    html {
-        font-size: 75%;
-    }
-}
-/* tablet */
-@media (max-width: 768px) {
-    html {
-        font-size: 62.5%;
-    }
-
-    #hamburger-menu {
-        display: inline-block;
-    }
-
-    .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 23rem;
-        height: 100vh;
-        background-color: #fff;
-        transition: .5s;
-    }
-
-    .navbar .navbar-nav.active {
-        right: 0;
-    }
-
-    .navbar .navbar-nav a {
-        display: block;
-        color: var(--bg);
-        margin: 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .navbar .navbar-nav a::after {
-        transform-origin: 0 0;
-    }
-    .navbar .navbar-nav a:hover:after {
-        transform:scaleX(0.2);
-    }
-
-    .about .row {
-        flex-wrap: wrap;
-    }
-
-    .about .row .about-img img {
-        height: 24rem;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .about .row .content {
-        padding: 0;
-    }
-
-    .about .row .content h3 {
-        margin-top: 1rem;
-        font-size: 2rem;
-    }
-
-    .about .row .content p {
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-
-}
-/* handphone */
-@media (max-width: 450px) {
-    html {
-        font-size: 55%;
-    }
-
-    #hamburger-menu {
-        display: inline-block;
-    }
-
-    .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 20rem;
-        height: 100vh;
-        background-color: #fff;
-        transition: .5s;
-    }
-
-    .navbar .navbar-nav.active {
-        right: 0;
-    }
-
-    .navbar .navbar-nav a {
-        display: block;
-        color: var(--bg);
-        margin: 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .navbar .navbar-nav a::after {
-        transform-origin: 0 0;
-    }
-    .navbar .navbar-nav a:hover:after {
-        transform:scaleX(0.2);
-    }
 }
