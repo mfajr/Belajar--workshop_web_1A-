@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand bg-primary navbar-dark">
         <div class="container-lg">
-            <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i>Navbar</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> Belajar Bootstrap Bersama pak Amir</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -66,17 +66,17 @@
                             <div class="offcanvas-body">
                                 <ul class="nav nav-pills flex-column flex-grow-1">
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" aria-current="page" href="#"><i
+                                        <a class="nav-link link-dark" aria-current="page" href="index.html"><i
                                                 class="bi bi-house-door"></i>Dashboard</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#"><i class="bi bi-dot"></i>Menu 1</a>
+                                        <a class="nav-link active" href="table.html"><i class="bi bi-dot"></i>Menu 1</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-dot"></i>Menu 2</a>
+                                        <a class="nav-link link-dark" href="table.html"><i class="bi bi-dot"></i>Menu 2</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-dot"></i>Menu 3</a>
+                                        <a class="nav-link link-dark" href="index.html"><i class="bi bi-dot"></i>Menu 3</a>
                                     </li>
                                 </ul>
                             </div>
@@ -97,7 +97,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Impian</h5>
                                 <p class="card-text">Semoga di kemudian hari, saya mempunyai waktu dan modal
-                                    bangun usaha Roti Bakar untuk umroh orang tua, in sya Allah</p>
+                                    bangun usaha Roti Bakar untuk umroh orang tua, aamiin</p>
                                 <a href="#" class="card-link">Card link</a>
                                 <a href="#" class="card-link">Another link</a>
                             </div>
@@ -119,18 +119,40 @@
     <!-- Modal -->
     <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen-md-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profil</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com" value="muhammadfajar7305@gmail.com" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Nama Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Hobi</option>
+                            <option value="1">Bantu Orang</option>
+                            <option value="2">Main Basket</option>
+                            <option value="3">Jalan-Jalan</option>
+                            <option value="3">Menantang orang</option>
+                        </select>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>
